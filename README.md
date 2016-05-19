@@ -23,9 +23,10 @@ CyberoamMayhem is a small command-line program to perform brute force attack (di
 # OPTIONS
 
     -h,  --help                      Print this help
-    -p,  --password_start            Number from which
-                                     you want to start
-                                     checking for password (default is 1000)
+    -p,  --password_start            Number from which you want to start checking for password 
+                                     (default is 1000)
+    -u   --password_end              Number up-to which you want to check for password
+                                     (default is 10000)
     -t,  --time                      time between two
                                      successive attack
                                      (default is 0.5 sec)                                 
